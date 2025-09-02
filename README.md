@@ -30,7 +30,7 @@ Automatically recognizes faces from a webcam to mark attendance in real-time, sa
 def create_dataset(user_id, name):
     # Uses OpenCV to capture and save 50 face images per user
 ```
-> ![Add a cartoon camera or photos sticker here!](assets/camera_sticker.png)
+
 
 ---
 
@@ -49,7 +49,7 @@ Loading image from dataset/Jaideep_001/0.jpg
 ...
 Model trained and saved.
 ```
-> ![Medal or progress bar sticker](assets/train_sticker.png)
+
 
 ---
 
@@ -69,7 +69,7 @@ def recognize_and_mark():
 | Jaideep_001 | 2024-12-10 | 23:12:56 |
 | Jaideep_001 | 2024-12-11 | 11:33:47 |
 
-> ![Clipboard or checkmark sticker](assets/attendance_sticker.png)
+
 
 ---
 
@@ -100,14 +100,7 @@ def recognize_and_mark():
     - Train the face recognizer
     - Perform live face recognition & mark attendance
 
----
 
-## 📸 Sample Outputs
-
-- Live Attendance Example:  
-  ![Sample Attendance Screenshot](assets/attendance_sample.png)
-  
----
 
 ## 👤 Author
 
