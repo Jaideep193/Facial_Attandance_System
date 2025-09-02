@@ -113,4 +113,4 @@ def recognize_and_mark():
 
 **Jaideep193**
 
-(Upload custom sticker images to the `assets/` folder and update their filenames as needed. Emoji and image placeholders make your README visually appealing!)
+
