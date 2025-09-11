@@ -8,13 +8,16 @@ Automatically recognizes faces from a webcam to mark attendance in real-time, sa
 
 ## ✨ Key Features
 
-- **🖼️ Face Detection & Dataset Creation:**  
+- **🖼️ Face Detection & Dataset Creation:**
   Capture face images from a webcam and organize them into structured user folders.
-- **🧑‍🏫 Model Training:**  
+
+- **🧑‍🏫 Model Training:**
   Train a robust LBPH (Local Binary Patterns Histograms) recognizer on your dataset for identification.
-- **⚡ Real-time Attendance:**  
+
+- **⚡ Real-time Attendance:**
   Recognize faces from the live webcam feed and mark attendance only once per user per day (`attendance.csv`).
-- **📁 Data Persistence:**  
+
+- **📁 Data Persistence:**
   All data—including user photos, trained model weights (`face_recognizer.yml`), and label mappings (`label_map.npy`)—is stored for repeated use.
 
 ---
@@ -22,7 +25,6 @@ Automatically recognizes faces from a webcam to mark attendance in real-time, sa
 ## 🔬 How It Works
 
 ### 1. 📸 Dataset Creation
-
 - Capture **50 grayscale face samples per user**.
 - Images saved in `dataset/{name}_{user_id}/`.
 
@@ -31,11 +33,9 @@ def create_dataset(user_id, name):
     # Uses OpenCV to capture and save 50 face images per user
 ```
 
-
 ---
 
 ### 2. 🏋️‍♂️ Model Training
-
 - Loads all images from your dataset directory and builds the face recognizer model.
 - Trained model saved as `face_recognizer.yml`, with user mapping in `label_map.npy`.
 
@@ -43,6 +43,7 @@ def create_dataset(user_id, name):
 def train_model():
     # Trains the LBPH face recognizer on all dataset images
 ```
+
 **Console Output Sample:**
 ```
 Loading image from dataset/Jaideep_001/0.jpg
@@ -50,11 +51,9 @@ Loading image from dataset/Jaideep_001/0.jpg
 Model trained and saved.
 ```
 
-
 ---
 
 ### 3. 🤳 Real-Time Face Recognition & Attendance
-
 - Webcam starts, detects and recognizes faces.
 - If recognized, attendance is updated in `attendance.csv` and label appears on-screen.
 
@@ -62,14 +61,20 @@ Model trained and saved.
 def recognize_and_mark():
     # Detects and recognizes faces, then writes to attendance CSV
 ```
-**Output Example (attendance.csv):**
 
+**Output Example (attendance.csv):**
 | Name        | Date       | Time     |
-|-------------|------------|----------|
+|-------------|------------|-----------|
 | Jaideep_001 | 2024-12-10 | 23:12:56 |
 | Jaideep_001 | 2024-12-11 | 11:33:47 |
 
+---
 
+## 📊 Block Diagram
+
+![Facial Attendance System Block Diagram](https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/2071e115-0b73-4fa3-ba88-a774cfbb1a9c.png)
+
+*System workflow showing the three main phases: Dataset Creation, Model Training, and Real-time Recognition & Attendance Marking.*
 
 ---
 
@@ -100,10 +105,6 @@ def recognize_and_mark():
     - Train the face recognizer
     - Perform live face recognition & mark attendance
 
-
-
 ## 👤 Author
 
 **Jaideep193**
-
-
