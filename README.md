@@ -51,15 +51,15 @@ def recognize_and_mark():
 
 **Output Example (attendance.csv):**
 | Name        | Date       | Time     |
-|-------------|------------|----------|
+|-------------|------------|-----------|
 | Jaideep_001 | 2024-12-10 | 23:12:56 |
 | Jaideep_001 | 2024-12-11 | 11:33:47 |
 
 ---
 
 ## 📊 Block Diagram
-![Facial Attendance System Block Diagram](https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/13b163d9-0bd9-4853-b82c-f9b00f972d3a.png)
-*System workflow: Start -> Dataset Creation -> Model Training -> Recognition -> Attendance Log -> End.*
+![Facial Attendance System Block Diagram](https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/f23d9994-6bda-4ea5-a596-1600de3b31a0.png)
+*Technical block diagram: Facial Attendance System with webcam input, face detection, preprocessing, feature extraction, database, recognition, and attendance logging.*
 
 ---
 
